@@ -13,11 +13,17 @@
  *= require_tree .
  *= require_self
  */
+ 
+body  {
+    padding-bottom: 70px;
+ }
+
 footer {
     background-color: #999;
     min-height: 30px;
     vertical-align: middle;
     line-height: 50px;
+    margin-top: 20px;
     position: fixed; /* Фиксированное положение */
     left: 0; bottom: 0; /* Левый нижний угол */
     width: 100%; /* Ширина слоя */

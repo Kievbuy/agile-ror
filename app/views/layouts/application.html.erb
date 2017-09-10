@@ -18,9 +18,10 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">Home</a>
-      <a class="nav-item nav-link" href="#">Features</a>
-      <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link" href="#">Questions</a>
+      <a class="nav-item nav-link" href="#">News</a>
       <a class="nav-item nav-link disabled" href="#">Delivery</a>
+      <a class="nav-item nav-link disabled" href="#">Contacts</a>
     </div>
   </div>
   </div>
@@ -29,6 +30,12 @@
 <div class="container">
   <%= yield %>
 </div>
+
+<footer>
+  <div class="container">
+    <%= Time.now  %>. Kiev
+  </div>
+</footer>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

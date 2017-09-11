@@ -9,11 +9,13 @@
         <tr>
             <td><%= item.quantity %> &times;</td>
             <td><%= item.product.title %></td>
+            <td><%= item.product.price %></td>
+            <td><b><%= number_to_currency(item.total_price) %></b></td>
         </tr>
     <% end %>
     <tr>
-        <td colspan="2" class="text-right">Total</td>
-        <td><%= number_to_currency(@cart.total_price) %></td>
+        <td colspan="3" class="text-right"><b>Total :</b></td>
+        <td><b><%= number_to_currency(@cart.total_price) %></b></td>
     </tr>
 </table>
 

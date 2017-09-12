@@ -30,8 +30,19 @@
   </div>
 </nav>
 
-<div class="container">
-  <%= yield %>
+<div class="container">.
+  <div class="row">
+    <div class="col-md-9">
+      <div class="container">
+         <%= yield %>
+      </div>
+    </div>
+    <div class="col-md-3 side-menu">
+      <div class="container">
+        <p class="h1 text-center">Side Menu</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <footer>

@@ -14,7 +14,7 @@
   <% @products.each do |product| %>
     <div class="col-sm-4">
       <% cache ['card', product] do %>  <!--cache-->
-    <div class="card" style="width: 16rem;">
+    <div class="card" style="width: 15rem;">
       <img class="card-img-top" src="<%= product.image_url %>" alt="Card image cap" height:"200" width:"100%">
       <div class="card-body">
         <h4 class="card-title"><%= product.title %></h4>

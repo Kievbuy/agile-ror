@@ -22,11 +22,13 @@
       <a class="nav-item nav-link" href="#">News</a>
       <a class="nav-item nav-link disabled" href="#">Delivery</a>
       <a class="nav-item nav-link disabled" href="#">Contacts</a>
-     <div class="navbar-nav justify-content-end">
-      <a class="nav-item nav-link" href="<%= cart_path(@cart) %>"><span class="fa fa-shopping-cart" aria-hidden="true"></span> Shopping Cart</a>
+     
     </div>
+     <div class="navbar-nav pull-xs-right">
+      <a class="nav-item nav-link btn btn-outline-warning" href="<%= cart_path(@cart) %>"><span class="fa fa-shopping-cart" aria-hidden="true"></span> Shopping Cart</a>
     </div>
   </div>
+   
   </div>
 </nav>
 
@@ -41,7 +43,10 @@
       <div class="container">
         <p class="h1 text-center">Side Menu</p>
         
-        <div id="cart">
+        <div id="cart" <% if @cart.line_items.empty? %>
+            style="display: none"
+        <% end %>
+        >
           <%= render @cart %>
         </div>
       </div>
